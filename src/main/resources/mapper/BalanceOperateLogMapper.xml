@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kodgames.wechattools.dao.BalanceOperateLogMapper">
+  <resultMap id="BaseResultMap" type="com.kodgames.wechattools.model.BalanceOperateLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="serial_no" jdbcType="VARCHAR" property="serialNo" />
+    <result column="balance_id" jdbcType="BIGINT" property="balanceId" />
+    <result column="operate_type" jdbcType="INTEGER" property="operateType" />
+    <result column="begin_money" jdbcType="DOUBLE" property="beginMoney" />
+    <result column="end_money" jdbcType="DOUBLE" property="endMoney" />
+    <result column="operate_time" jdbcType="TIMESTAMP" property="operateTime" />
+    <result column="union_id" jdbcType="VARCHAR" property="unionId" />
+    <result column="open_id" jdbcType="VARCHAR" property="openId" />
+    <result column="area_id" jdbcType="INTEGER" property="areaId" />
+    <result column="account_id" jdbcType="VARCHAR" property="accountId" />
+  </resultMap>
+</mapper>

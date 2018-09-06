@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>错误码页面</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.css" rel="stylesheet"
+          type="text/css">
+    <link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <script>
+        $(function () {
+            var address = window.location.href;
+            var host = address.split("/html")[0];
+            $.get(host + "/code", function (res) {
+                if (res.code == 0) {
+                    $('#codes').DataTable({
+                        paging: false,
+                        searching: false,
+                        ordering: false,
+                        info: false,
+                        data: res.data,
+                        columns: [
+                            {title: "状态码"},
+                            {title: "名称"},
+                            {title: "描述"},
+                        ]
+                    });
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    <table id="codes" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%"></table>
+</div>
+</body>
+</html>

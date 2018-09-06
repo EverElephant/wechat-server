@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Kod GMTools</title>
+    <link href="css/ligerui/ligerui-all.css" rel="stylesheet"/>
+    <link href="css/main/main.css" rel="stylesheet"/>
+    <script src="js/main/jquery-1.11.3.min.js"></script>
+    <script src="js/main/ligerui-1.3.2.all.js"></script>
+    <script src="js/main/main.js"></script>
+    <script src="js/main/function.js"></script>
+</head>
+<body>
+<div class="l-window-mask"></div>
+<div class="l-grid-loading">加载中...</div>
+<div id="pageloading"></div>
+<div id="topmenu" class="l-topmenu">
+    <label style="color: #fff;margin: 0px 0px 0px 15px;" class="bold" id="areaTitle"></label>
+    <div class="l-topmenu-welcome">
+        <a href="#" class="l-link2" onclick="location.href='logout.do'">登出</a>
+    </div>
+</div>
+<div id="layout" style="width:99.2%; margin:0 auto; margin-top:4px; ">
+    <div position="left" title="功能列表" id="accordion">
+    </div>
+    <div position="center" id="framecenter">
+        <div tabid="home" title="首页" style="height:300px">
+            <iframe name="home" id="home" src="html/main/welcome.html"></iframe>
+        </div>
+    </div>
+</div>
+<div style="height:32px; line-height:32px; text-align:center;">
+    Copyright ? 2011-2015 www.kodgames.com
+</div>
+<div style="display:none"></div>
+</body>
+</html>

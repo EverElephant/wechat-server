@@ -1,0 +1,7 @@
+package com.kodgames.wechattools.dao;
+
+import com.kodgames.wechattools.core.Mapper;
+import com.kodgames.wechattools.model.BalanceOperateLog;
+
+public interface BalanceOperateLogMapper extends Mapper<BalanceOperateLog> {
+}

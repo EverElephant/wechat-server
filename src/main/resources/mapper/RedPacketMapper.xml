@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kodgames.wechattools.dao.RedPacketMapper">
+  <resultMap id="BaseResultMap" type="com.kodgames.wechattools.model.RedPacket">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="balance_id" jdbcType="BIGINT" property="balanceId" />
+    <result column="area_id" jdbcType="INTEGER" property="areaId" />
+    <result column="billing_order_id" jdbcType="VARCHAR" property="billingOrderId" />
+    <result column="channel_order_id" jdbcType="VARCHAR" property="channelOrderId" />
+    <result column="rmb" jdbcType="DOUBLE" property="rmb" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+</mapper>
